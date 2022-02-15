@@ -1,0 +1,75 @@
+what is node js:-is javascript runtime built on chrome v8
+javascript engine for executing javascript code
+
+nodejs is not a language or a framework 
+
+node js is used to form a server
+node js uses asynchronous programming
+
+what can do nodejs
+generate dynamic page content.
+Node.js can create, open, read, write, delete, and close files on the server.
+Node.js can collect form data.
+Node.js can add, delete, modify data in your database.
+
+// repl is just like cmd
+repl very useful in experimenting with nodejs codes and to debug the javascript codes
+read eval print loop
+
+how to create null files
+type null > file name
+ 
+
+
+'_'=> is used to fetch the last result
+ nodejs have new datatype call as buffer store the binary data type while reading the file        
+
+
+ types of module in node js 
+1:- file based module:-Import and Export,instead of Import we use require function.
+2:-Core module:-Built-in module:-path,fs,os,utility
+3:-External node module:-Api,node package manager(npm)
+
+
+event :-
+
+
+const EventEmitter=require("events");
+instance of a class
+const event=new EventEmitter();
+
+event.on("emit_name" ()=>{
+    //statement
+})
+//emit is like event name ,same as with on is like addEventListener
+event.emit(emit_name)
+
+//OR
+
+const event=require("events");
+const EventEmitter=new event.EventEmitter();
+event.on("emit_name" ()=>{
+    //statement
+})
+//emit is like event  ,same as with on is like addEventListener
+event.emit(emit_name)
+
+
+using both methods we can call multiple callbacks function
+
+
+
+streams:-
+real-time instead of downloading the data
+streams are object:-
+4 types of streams:-
+Readable:-read operation
+Writeable:-write operation
+Duplex:-read write both operation
+Transform:- A type of Duplex stream where the output is computed based on input
+
+EventEmitter in streams:-
+data:-This event is fired when data is available to read
+end:-This event is fired when there is no more data
+error:-This event is fired when there is any error receiving or writing data 
+finish:-this event is fired when all the data has been flushed to underlying system.

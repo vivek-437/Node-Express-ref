@@ -1,0 +1,31 @@
+Express is framework of node js
+
+1:-Install Express js
+after installing nodejs
+mkdir foldername
+cd foldername
+npm init
+npm install express /npm i express
+
+after this we require("express");
+create a object using class
+const express = require("express");
+const app = express();
+
+
+Http post handle:-
+we need to install middleware module called body-parser
+to install body-parser:-npm install body-parser
+then we have to require body-parser
+const bodyParser=require("body-parser)
+
+app.use(bodyParser.urlencode({extended:true}))
+
+app.post("/",(req,res)=>{
+    data coming from app.use is encoded in str
+    if we have get number so we have convert it into number
+    console.log(req.body)
+})
+
+in express js everything is middleware 
+middleware means:-request and response ke beeche mei jo kuch bhi horaha hai.
